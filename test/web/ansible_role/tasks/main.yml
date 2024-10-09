@@ -1,0 +1,8 @@
+- name: Deploy Docker container
+  docker_container:
+    name: my-flask-app
+    image: yourusername/my-flask-app
+    state: started
+    restart_policy: always
+    ports:
+      - "80:80"
